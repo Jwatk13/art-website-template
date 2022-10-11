@@ -1,13 +1,22 @@
+import React, { useState }  from 'react';
 import { NavLink } from 'react-router-dom';
 import { Layout } from 'antd';
 import  navLogo  from '../../../images/navLogo.jpg';
 import searchIcon from '../../../images/searchIcon.png';
 import cartIcon from '../../../images/cartIcon.png';
-// import NavBarLinks from './NavBarLinks';
 
 const { Header } = Layout;
 
+
+
 function NavBar() {
+    const [ colorChange, setColorChange ] = useState(false);
+
+    const changeNavbarColor = () => {
+        window.scrollY >= 300 ? setColorChange(true) : setColorChange(false);
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
     return (
         <Header
             style={{
@@ -16,7 +25,7 @@ function NavBar() {
                 padding: '0',
             }}
         >
-            <nav className='navbar-mainNav'>
+            <nav className={ colorChange ? 'navbar colorChange' : 'navbar' } >
                 <div className='navbar-links navbar-buttons'>
                     <NavLink to="/">
                         <img className='nav-logo' src={navLogo} alt="logo" />

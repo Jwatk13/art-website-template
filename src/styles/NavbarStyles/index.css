@@ -1,6 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Staatliches&display=swap'); */
 
-.navbar-mainNav {
+.navbar {
     display: flex;
     min-height: 10vh;
     padding: 0 1%;
@@ -10,7 +10,13 @@
     overflow: hidden;
     transition: 0.1s all ease-out;
     position: fixed;
+    background-color: transparent;
 }
+.navbar.colorChange {
+    background-color: pink;
+    transition-duration: 0.7s;
+}
+
 .nav-logo {
     display: flex;
     align-items: center;

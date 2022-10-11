@@ -22,6 +22,9 @@ function RenderLandingPage(props) {
             <div className='landpage-background'>
                 <img className='landing-img' src={navLogo} alt="background img" />
             </div>
+            <div className='landpage-background'>
+                <img className='landing-img' src={navLogo} alt="background img" />
+            </div>
         </div>
     );
 }
