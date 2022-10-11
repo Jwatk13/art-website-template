@@ -1,0 +1,8 @@
+.landpage-background {
+    display: flex;
+    justify-content: center;
+}
+.landing-primaryImg {
+    width: 95%;
+    height: auto;
+}
