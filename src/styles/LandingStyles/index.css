@@ -1,8 +1,53 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .landpage-background {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .landing-primaryImg {
-    width: 95%;
+    width: 98%;
     height: auto;
 }
+.landing-text {
+    text-align: center;
+}
+.landing-main-title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: double;
+    border-top-width: 4px;
+}
+.landing-main-text {
+    margin: 20px;
+}
+
+.landing-img {
+    width: 50%;
+    height: auto;
+}
+.landpage-images1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+}
+.landpage-images2 {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+}
+.landing-img3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+

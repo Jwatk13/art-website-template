@@ -1,12 +1,11 @@
+import React from 'react';
+import RenderLoginPage from './RenderLoginPage';
+
 const LoginContainer = () =>{
     return (
-        <div className="login-container">
-            <div className='left-login'>
-                <div className='left-login-text'>
-                    <p>Hello World!</p>
-                </div>
-            </div>
-        </div>
+        <>
+            <RenderLoginPage />
+        </>
     );
 };
 
