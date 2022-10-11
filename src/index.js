@@ -26,13 +26,7 @@ root.render(
   <Provider store={store}>
     <Router>
       <React.StrictMode>
-        <Layout
-          style={{
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+        <Layout>
           <NavBar />
           <App />
           {/* <Footer /> */}
@@ -45,7 +39,7 @@ root.render(
 function App() {
 
   return (
-    <Layout.Content style={{ display: 'flex', justifyContent: 'center' }}>
+    <Layout.Content>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
