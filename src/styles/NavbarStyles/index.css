@@ -1,0 +1,76 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Staatliches&display=swap'); */
+
+.navbar-mainNav {
+    display: flex;
+    min-height: 10vh;
+    padding: 0 1%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.1s all ease-out;
+    position: fixed;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+}
+.navbar-buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar-btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+    border-width: 0px;
+    width: 100px;
+    padding: 5px;
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+.navbar-btn:hover {
+    background-color: grey;
+    color: white;
+
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    min-height: 10vh;
+}
+.navicon-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    background-color: transparent;
+    border: none;
+}
+input.search-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+input.search-icon:hover {
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.15s;
+}
+input.cart-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+input.cart-icon:hover {
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.15s;
+}
