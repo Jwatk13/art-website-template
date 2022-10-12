@@ -1,6 +1,8 @@
 import React from 'react';
-import navLogo from '../../../images/navLogo.jpg';
 import ghibli2 from '../../../images/ghibli2.jpg';
+import howlsCastle1 from '../../../images/howlsCastle1.jpg';
+import howlsCastle2 from '../../../images/howlsCastle2.jpg';
+import howlsCastle3 from '../../../images/howlsCastle3.jpg';
 
 function RenderLandingPage() {
     return (
@@ -17,13 +19,13 @@ function RenderLandingPage() {
                 </p>
             </div>
             <div className='landpage-images1'>
-                <img className='landing-img' src={navLogo} alt="background img" />
+                <img className='landing-img' src={howlsCastle1} alt="background img" />
             </div>
             <div className='landpage-images2'>
-                <img className='landing-img' src={navLogo} alt="background img" />
+                <img className='landing-img' src={howlsCastle2} alt="background img" />
             </div>
             <div className='landpage-images3'>
-                <img className='landing-img' src={navLogo} alt="background img" />
+                <img className='landing-img' src={howlsCastle3} alt="background img" />
             </div>
         </div>
     );

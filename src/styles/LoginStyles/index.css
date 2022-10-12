@@ -3,15 +3,43 @@
     flex-direction: row;
 }
 .login-background {
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 .login-form {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 130px;
+    background-image: url('https://images.hdqwalls.com/download/gradient-texture-abstract-4k-ar-1125x2436.jpg');
+    border-left: solid 5px;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid;
+}
+.submit-btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-top: solid 1px;
+    border-bottom: solid 4px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+.submit-btn:hover {
+    background-color: rgb(105, 48, 9);
+    border-color: rgba(240, 199, 180, 0.644);
+    color: rgba(240, 199, 180, 0.644);
 }

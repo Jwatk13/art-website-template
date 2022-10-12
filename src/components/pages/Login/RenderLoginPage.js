@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import lakePortrait from '../../../images/lakePortrait.jpg';
+import fallColors from '../../../images/fallColors.jpg';
 
 const intialFormValues = {
     username: '',
@@ -28,27 +28,34 @@ function RenderLoginPage(props) {
             return true;
         }
     }
-  
+
+    const hidden = () => {
+        document.body.classList.add("no-scroll");
+    }
+        
+    
     return (
-        <div className='login-wrapper'>
-            <img className='login-background' src={lakePortrait} alt="login background" />
+        <div className='login-wrapper' hidden={hidden}>
+            <img className='login-background' src={fallColors} alt="login background" />
             <form className='login-form' id='loginForm' onSubmit={onSubmit}>
-                <h2>LOGIN</h2>
-                <input 
-                    maxLength={20}
-                    value={values.username}
-                    onChange={onChange}
-                    placeholder="Username"
-                    id="username"
-                />
-                <input 
-                    maxLength={28}
-                    value={values.password}
-                    onChange={onChange}
-                    placeholder="Password"
-                    id="password"
-                />
-                <button disabled={isDisabled()} id="submit" className='submit-btn'>Submit</button>
+                <div className='input-form'>
+                    <h2>Login Here</h2>
+                    <input 
+                        maxLength={20}
+                        value={values.username}
+                        onChange={onChange}
+                        placeholder="Username"
+                        id="username"
+                    />
+                    <input 
+                        maxLength={28}
+                        value={values.password}
+                        onChange={onChange}
+                        placeholder="Password"
+                        id="password"
+                    />
+                    <button disabled={isDisabled()} id="submit" className='submit-btn'>LOGIN</button>
+                </div>
             </form>
         </div>
     );
