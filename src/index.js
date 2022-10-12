@@ -15,7 +15,8 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { LandingPage } from './components/pages/Landing/index';
 import { LoginPage } from './components/pages/Login/index';
-import NavBar from './components/pages/Navbars/Navbar';
+import NavBar from './components/Navbar';
+import Footer from './components/Footer';
 
 const store = createStore(applyMiddleware(thunk));
 window.store = store;
@@ -29,7 +30,7 @@ root.render(
         <Layout>
           <NavBar />
           <App />
-          {/* <Footer /> */}
+          <Footer />
         </Layout>
       </React.StrictMode>
     </Router>

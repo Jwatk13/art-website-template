@@ -1,13 +1,12 @@
 import React, { useState }  from 'react';
 import { NavLink } from 'react-router-dom';
 import { Layout } from 'antd';
-import  navLogo  from '../../../images/navLogo.jpg';
-import searchIcon from '../../../images/searchIcon.png';
-import cartIcon from '../../../images/cartIcon.png';
+import navLogo from '../images/navLogo.jpg';
+import searchIcon from '../images/searchIcon.png';
+import cartIcon from '../images/cartIcon.png';
+
 
 const { Header } = Layout;
-
-
 
 function NavBar() {
     const [ colorChange, setColorChange ] = useState(false);

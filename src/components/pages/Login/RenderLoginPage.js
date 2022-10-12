@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import laputiaCastle from '../../../images/laputiaCastle.jpg';
+import lakePortrait from '../../../images/lakePortrait.jpg';
 
 const intialFormValues = {
     username: '',
@@ -31,13 +31,13 @@ function RenderLoginPage(props) {
   
     return (
         <div className='login-wrapper'>
-            <img className='login-background' src={laputiaCastle} alt="login background" />
+            <img className='login-background' src={lakePortrait} alt="login background" />
             <form className='login-form' id='loginForm' onSubmit={onSubmit}>
                 <h2>LOGIN</h2>
                 <input 
                     maxLength={20}
                     value={values.username}
-                    onchange={onChange}
+                    onChange={onChange}
                     placeholder="Username"
                     id="username"
                 />
