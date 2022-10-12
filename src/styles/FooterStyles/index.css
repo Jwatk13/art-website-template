@@ -1,8 +1,11 @@
 .footer{
     padding: 25px;
-    background-color: pink;
+    background-color: rgb(238, 229, 231);
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
+}
+.copyright {
+    text-align: center;
 }

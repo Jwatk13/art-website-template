@@ -26,6 +26,7 @@
     padding-left: 20px;
     border: solid;
 }
+
 .submit-btn {
     color: black;
     font-size: 16px;
@@ -43,3 +44,15 @@
     border-color: rgba(240, 199, 180, 0.644);
     color: rgba(240, 199, 180, 0.644);
 }
+/* .submit-btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(240, 199, 180, 0.644);
+    transition-duration: 0.4s;
+} */
+

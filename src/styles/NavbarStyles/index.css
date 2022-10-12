@@ -12,7 +12,7 @@
     transition-duration: 0.4s;
 }
 .navbar.colorChange {
-    background-color: pink;
+    background-color: rgb(238, 229, 231);
     transition-duration: 0.6s;
 }
 

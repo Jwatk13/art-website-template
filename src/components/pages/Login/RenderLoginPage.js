@@ -29,13 +29,16 @@ function RenderLoginPage(props) {
         }
     }
 
-    const hidden = () => {
-        document.body.classList.add("no-scroll");
-    }
-        
-    
+    // const buttonIsDown = () => {
+    //     document.getElementById("submit").className = 'submit-btn-down';
+    // }
+
+    // const buttonIsUp = () => {
+    //     document.getElementById("submit").className = 'submit-btn';
+    // }
+
     return (
-        <div className='login-wrapper' hidden={hidden}>
+        <div className='login-wrapper'>
             <img className='login-background' src={fallColors} alt="login background" />
             <form className='login-form' id='loginForm' onSubmit={onSubmit}>
                 <div className='input-form'>
@@ -54,7 +57,13 @@ function RenderLoginPage(props) {
                         placeholder="Password"
                         id="password"
                     />
-                    <button disabled={isDisabled()} id="submit" className='submit-btn'>LOGIN</button>
+                    <button 
+                        className='submit-btn'
+                        type='submit' 
+                        disabled={isDisabled()} 
+                        id="submit">
+                        LOGIN
+                    </button>
                 </div>
             </form>
         </div>
