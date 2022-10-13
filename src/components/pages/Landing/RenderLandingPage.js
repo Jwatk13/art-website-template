@@ -1,5 +1,5 @@
 import React from 'react';
-import ghibli2 from '../../../images/ghibli2.jpg';
+import flowerPlateau from '../../../images/flowerPlateau.jpg';
 import howlsCastle1 from '../../../images/howlsCastle1.jpg';
 import howlsCastle2 from '../../../images/howlsCastle2.jpg';
 import howlsCastle3 from '../../../images/howlsCastle3.jpg';
@@ -8,7 +8,7 @@ function RenderLandingPage() {
     return (
         <div className='landing-container'>
             <div className='landpage-background'>
-                <img className='landing-primaryImg' src={ghibli2} alt="background img" />
+                <img className='landing-primaryImg' src={flowerPlateau} alt="background img" />
             </div>
             <div className='landing-text'>
                 <h1 className="landing-main-title">
