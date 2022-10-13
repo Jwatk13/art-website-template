@@ -23,26 +23,26 @@ function RenderLoginPage(props) {
 
     const isDisabled = () => {
         if (values.username.trim().length >= 3 && values.password.trim().length >= 8) {
-            return false
+            return false; 
         } else {
             return true;
-        }
+        }            
     }
 
-    // const buttonIsDown = () => {
-    //     document.getElementById("submit").className = 'submit-btn-down';
-    // }
+    const buttonIsDown = () => {
+        document.getElementById("submit").className = 'submit-btn-down';
+    }
 
-    // const buttonIsUp = () => {
-    //     document.getElementById("submit").className = 'submit-btn';
-    // }
+    const buttonIsUp = () => {
+        document.getElementById("submit").className = 'submit-btn';
+    }
 
     return (
         <div className='login-wrapper'>
             <img className='login-background' src={fallColors} alt="login background" />
             <form className='login-form' id='loginForm' onSubmit={onSubmit}>
                 <div className='input-form'>
-                    <h2>Login Here</h2>
+                    <p id='h2' >Login Here</p>
                     <input 
                         maxLength={20}
                         value={values.username}
@@ -57,7 +57,9 @@ function RenderLoginPage(props) {
                         placeholder="Password"
                         id="password"
                     />
-                    <button 
+                    <button
+                        onMouseDown={buttonIsDown} 
+                        onMouseUp={buttonIsUp}
                         className='submit-btn'
                         type='submit' 
                         disabled={isDisabled()} 

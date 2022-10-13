@@ -5,6 +5,8 @@
 .login-background {
     width: 100%;
     height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .login-form {
     width: 100%;
@@ -13,6 +15,8 @@
     justify-content: center;
     align-items: center;
     background-image: url('https://images.hdqwalls.com/download/gradient-texture-abstract-4k-ar-1125x2436.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-left: solid 5px;
 }
 .input-form {
@@ -21,12 +25,30 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    height: 150px;
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 60%; 
+    height: 30%;
     border: solid;
 }
 
+/* TO-DO: possibly add this style to the button for while it's disabled?? have to look into it some more */
+
+/* .btn-disabled {
+    color: grey;
+    font-size: 16px;
+    font-weight: 600;
+    border-top: solid grey 1px;
+    border-bottom: solid grey 4px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    transition-duration: 0.4s;
+} */
+#h2 {
+    font-size: x-large;
+    padding-bottom: 2px;
+    border-bottom: solid 2px;
+}
 .submit-btn {
     color: black;
     font-size: 16px;
@@ -34,7 +56,7 @@
     border-top: solid 1px;
     border-bottom: solid 4px;
     border-radius: 15px;
-    width: 100%;
+    width: 60%;
     padding: 5px;
     background-color: transparent;
     transition-duration: 0.4s;
@@ -44,15 +66,19 @@
     border-color: rgba(240, 199, 180, 0.644);
     color: rgba(240, 199, 180, 0.644);
 }
-/* .submit-btn {
+.submit-btn-down {
     color: black;
     font-size: 16px;
     font-weight: 600;
     border: solid 1px;
     border-radius: 15px;
-    width: 100%;
+    width: 62%;
     padding: 5px;
     background-color: rgba(240, 199, 180, 0.644);
     transition-duration: 0.4s;
-} */
+}
+
+
+
+
 
